@@ -1,0 +1,69 @@
+@font-face {
+    font-family : 'icomoon';
+    src         : url('../fonts/icons/icomoon.woff') format('woff');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: block;
+}
+
+.icon {
+    &-arrow-left::before {
+        font-family: icomoon;
+        content    : '\e900';
+    }
+
+    &-arrow-right::before {
+        font-family: icomoon;
+        content    : '\e901';
+    }
+
+    &-clock::before {
+        font-family: icomoon;
+        content    : '\e902';
+    }
+
+    &-down::before {
+        font-family: icomoon;
+        content    : '\e903';
+    }
+
+    &-mail::before {
+        font-family: icomoon;
+        content    : '\e904';
+    }
+
+    &-facebook::before {
+        font-family: icomoon;
+        content    : '\e905 ';
+    }
+
+    &-google::before {
+        font-family: icomoon;
+        content    : '\e906 ';
+    }
+
+    &-insta::before {
+        font-family: icomoon;
+        content    : '\e907 ';
+    }
+
+    &-map::before {
+        font-family: icomoon;
+        content    : '\e908 ';
+    }
+
+    &-phone::before {
+        font-family: icomoon;
+        content    : '\e909 ';
+    }
+
+    &-pinterest::before {
+        font-family: icomoon;
+        content    : '\e90a ';
+    }
+
+    &-twitter::before {
+        font-family: icomoon;
+        content    : '\e90b ';
+    }
+}

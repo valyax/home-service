@@ -1,0 +1,20 @@
+.infobar {
+    padding: 1.5rem 0;
+
+    background-color: $color-light-grey;
+
+    @include breakpoint($reverse-bp) {
+        display: none;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__welcome {
+        color: lighten($color-text, 25%);
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}

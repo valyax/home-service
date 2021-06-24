@@ -1,0 +1,72 @@
+.contactbar {
+    &__list {
+        display: flex;
+        align-items: center;
+
+        list-style: none;
+    }
+
+    &__item {
+        display: flex;
+        margin: 1rem 0;
+
+        @include breakpoint($desktop-bp) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &:not(:last-child) {
+            margin-right: 5rem;
+
+            @include breakpoint($x-desktop-bp) {
+                margin-right: 3rem;
+            }
+        }
+
+        &::before {
+            margin-right: 1.5rem;
+
+            color: $color-primary;
+            font-size: 1.4rem;
+
+            @include breakpoint($desktop-bp) {
+                margin-right: 0;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    &__text {
+        display: block;
+        margin-bottom: 1rem;
+
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 3px;
+        font-size: 1rem;
+        color: lighten($color-text, 25%);
+
+        @include breakpoint($desktop-bp) {
+            text-align: center;
+        }
+    }
+
+    &__link {
+        display: block;
+
+        font-size: 1.6rem;
+        text-decoration: none;
+        font-weight: 500;
+        color: inherit;
+
+        transition: color 0.3s;
+
+        @include breakpoint($desktop-bp) {
+            text-align: center;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

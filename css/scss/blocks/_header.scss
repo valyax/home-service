@@ -1,0 +1,27 @@
+.header {
+    padding: 5rem 0;
+
+    @include breakpoint($reverse-bp) {
+        display: none;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+
+        @include breakpoint($desktop-bp) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        @include breakpoint($desktop-bp) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__contactbar {
+        margin: 0 auto;
+    }
+}
