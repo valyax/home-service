@@ -68,5 +68,106 @@
         </div>
     </header>
     <!-- end header -->
+
+    <!-- navigation -->
+    <nav class="navigation">
+        <div class="navigation__container container">
+            <button class="navigation__burger burger">
+                <span class="burger__item"></span>
+            </button>
+            <h2 class="navigation__title">Home service</h2>
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link navigation__link--active">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Services</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">About</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Testimonials</a>
+                </li>
+                <li class="navigation__item navigation__item--right">
+                    <button href="#" class="navigation__link navigation__link--accent">Request a quote</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end navigation -->
+
+    <!-- starter -->
+    <div class="starter">
+        <div class="starter__container container">
+            <h2 class="starter__title">Experienced Technicians</h2>
+            <p class="starter__text">Our technicians have decades of practical, in-field experience besides factory training. This means they have the knowledge and skills needed to diagnose and repair any appliance you may have.</p>
+            <div class="starter__btns">
+                <a href="#" class="starter__btn starter__btn--primary">Our services</a>
+                <a href="#" class="starter__btn">Get in touch</a>
+            </div>
+            <a href="#" class="starter__scrolldown icon-down">Scroll down</a>
+        </div>
+    </div>
+    <!-- end starter -->
+
+    <!-- services -->
+    <div class="services section">
+        <div class="container">
+            <div class="services__container">
+                <div class="services__item" style="background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(img/services/service-1.jpg)">
+                    <h3 class="services__item-title">Washing Machine Repair</h3>
+                    <p class="services__item-text">Whether your washing machine is front loading or top loading, our experts can provide fast and efficient repair to get it working again.</p>
+                </div>
+                <div class="services__item" style="background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(img/services/service-2.jpg)">
+                    <h3 class="services__item-title">Oven Repair</h3>
+                    <p class="services__item-text">Be sure that you work with a team of professionals who will be able to help you every step of the way with your oven repair needs.</p>
+                </div>
+                <div class="services__item" style="background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(img/services/service-3.jpg)">
+                    <h3 class="services__item-title">Refrigerator Repair</h3>
+                    <p class="services__item-text">Virtually every refrigerator problem can be fixed with our company services. We can fix any situation that involves refrigerators.</p>
+                </div>
+                <div class="services__item" style="background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(img/services/service-4.jpg)">
+                    <h3 class="services__item-title">Air Conditioner Repair</h3>
+                    <p class="services__item-text">Regardless of whether you need to repair, replace or maintain your current AC system or plan to install new air conditioning, we can help.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end services -->
+
+    <!-- about -->
+    <div class="about section">
+        <div class="about__container container">
+            <div class="about__left">
+                <img src="img/about/about-img.jpg" alt="" class="about__img">
+            </div>
+            <div class="about__right">
+                <h2 class="about__title">Let Our Professionals Work for Your Comfort!</h2>
+                <p class="about__desc">Our appliance repair technicians are clean and professional and provide repair services you can rely on.</p>
+                <p class="about__text">We service all major household appliances including washing machines, clothes dryers, refrigerators, freezers, ice makers, ice machines, dishwashers, cooktops, ovens, ranges, stoves, microwaves, vent hoods, trash compactors, and garbage disposals. Some locations also provide repair service for commercial equipment, reconditioned appliances, and parts.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+
+    <!-- action -->
+    <div class="action">
+        <div class="action__container container">
+            <div class="action__subtitle">Affordable repair solutions</div>
+            <h2 class="action__title">High-Quality and Friendly Services at Fair Prices</h2>
+            <button class="action__btn">Contact us</button>
+        </div>
+    </div>
+    <!-- end action -->
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navigation = document.querySelector('.navigation__list');
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('burger--active');
+            navigation.classList.toggle('navigation__list--active');
+        });
+    </script>
 </body>
 </html>

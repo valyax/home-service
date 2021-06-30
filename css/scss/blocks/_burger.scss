@@ -1,0 +1,42 @@
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width  : 2.5rem;
+    height : 2rem;
+
+    background: none;
+    border: none;
+    outline: none;
+
+    position: relative;
+
+    @include breakpoint($reverse-bp) {
+        display: flex;
+    }
+
+    &::before,
+    &__item,
+    &::after {
+        box-sizing: border-box;
+        width: 100%;
+        height: 2px;
+
+        background-color: $color-light;
+        content: "";
+
+        transition: transform 0.3s;
+    }
+
+    &--active::before {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    &--active &__item {
+        transform: scale(0);
+    }
+
+    &--active::after {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}

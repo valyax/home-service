@@ -1,0 +1,130 @@
+.navigation {
+    position: sticky;
+    top: 0;
+    z-index : 50;
+
+    @include breakpoint($reverse-bp) {
+        height: 5rem;
+    }
+
+    &__container {
+        display    : flex;
+        align-items: center;
+        height     : 100%;
+
+        &::after {
+            width : 100%;
+            height: 100%;
+
+            background-color: $color-dark;
+            content         : "";
+
+            position: absolute;
+            top     : 0;
+            left    : 0;
+        }
+    }
+
+    &__burger {
+        z-index: 1;
+    }
+
+    &__title {
+        display    : none;
+        margin-left: 2rem;
+
+        color      : $color-light;
+        font-weight: 500;
+        font-size  : 2.1rem;
+
+        z-index: 1;
+
+        @include breakpoint($reverse-bp) {
+            display: block;
+        }
+    }
+
+    &__list {
+        flex-grow: 1;
+        display  : flex;
+
+        list-style      : none;
+        background-color: $color-dark;
+
+        z-index: 1;
+
+        transition: left 0.3s;
+
+        @include breakpoint($reverse-bp) {
+            flex-direction: column;
+            padding-top   : 5rem;
+            width         : 30rem;
+            height        : 100vh;
+
+            position: fixed;
+            top     : 0;
+            left    : -30rem;
+            z-index : 0;
+
+            overflow: auto;
+
+            &--active {
+                left: 0;
+            }
+        }
+    }
+
+    &__item {
+        &--right {
+            margin-left: auto;
+
+            @include breakpoint($reverse-bp) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__link {
+        display    : flex;
+        align-items: center;
+        padding    : 0 3em;
+        height     : 6rem;
+
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        color          : $color-light;
+        text-decoration: none;
+        text-transform : uppercase;
+        font-weight    : 500;
+        font-size      : 1.4rem;
+        transition     : background-color 0.3s, color 0.3s;
+
+        @include breakpoint($tablet-bp) {
+            padding: 0 1.5em;
+        }
+
+        @include breakpoint($reverse-bp) {
+            height: 5rem;
+            width: 100%;
+
+            font-size: 1.2rem;
+        }
+
+        &--accent {
+            margin-left: auto;
+
+            background-color: $color-accent;
+
+            color: $color-text;
+        }
+
+        &:hover,
+        &--active {
+            background-color: $color-primary;
+
+            color: $color-light;
+        }
+    }
+}

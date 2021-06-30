@@ -1,0 +1,76 @@
+.action {
+    padding: 15rem 0;
+
+    background-color     : lighten($color-dark, 10%);
+    background-image     : linear-gradient(to top, rgba($color-dark, 0.6), rgba($color-dark, 0.6)), url(../img/action/action-bg.jpg);
+    background-attachment: fixed;
+    background-position  : center;
+    background-size      : cover;
+
+    @include breakpoint($reverse-bp) {
+        padding: 10rem 0;
+    }
+
+    &__container {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+        max-width     : 60rem;
+    }
+
+    &__subtitle {
+        margin-bottom: 1.5rem;
+
+        color         : $color-light;
+        text-transform: uppercase;
+        font-size     : 1.2rem;
+        font-weight   : 500;
+        letter-spacing: 3px;
+        text-align    : center;
+        line-height   : 1.8;
+    }
+
+    &__title {
+        margin-bottom: 5rem;
+
+        color      : $color-light;
+        font-size  : 3.6rem;
+        text-align : center;
+        line-height: 1.6;
+
+        @include breakpoint($reverse-bp) {
+            margin-bottom: 3rem;
+
+            font-size  : 2.4rem;
+            line-height: 1.4;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 1.5em 3em;
+
+        background-color: $color-accent;
+        border          : 1px solid transparent;
+        outline         : none;
+        cursor          : pointer;
+
+        color          : $color-text;
+        text-transform : uppercase;
+        text-decoration: none;
+        font-size      : 1.4rem;
+        font-weight    : 500;
+
+        transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
+        @include breakpoint($mobile-bp) {
+            font-size: 1.2rem;
+        }
+
+        &:hover {
+            background-color: transparent;
+            border-color    : $color-light;
+            color           : $color-light;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.about {
+    &__container {
+        display              : grid;
+        grid-template-columns: 5fr 4fr;
+        grid-gap             : 8rem;
+
+        @include breakpoint($desktop-bp) {
+            grid-template-columns: 1fr;
+            grid-gap             : 6rem;
+        }
+
+        @include breakpoint($reverse-bp) {
+            grid-gap: 3rem;
+        }
+
+        @include breakpoint($mobile-bp) {
+            grid-gap: 2rem;
+        }
+    }
+
+    &__right {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+    }
+
+    &__right,
+    &__left {
+        @include breakpoint($desktop-bp) {
+            max-width: 70rem;
+            margin   : 0 auto;
+        }
+    }
+
+    &__img {
+        display: flex;
+        width  : 100%;
+    }
+
+    &__title {
+        margin-bottom: 3rem;
+
+        font-size  : 3.6rem;
+        font-weight: 600;
+
+        @include breakpoint($reverse-bp) {
+            margin-bottom: 1.5rem;
+
+            font-size: 2.4rem;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 3rem;
+
+        font-weight: 500;
+        line-height: 1.6;
+
+        @include breakpoint($reverse-bp) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__text {
+        font-size  : 1.4rem;
+        line-height: 1.6;
+        font-weight: 400;
+        color      : lighten($color-text, 25%)
+    }
+}
