@@ -152,6 +152,20 @@ h6 {
   font-size: 1.4rem;
 }
 
+.socials--light .socials__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.socials--light .socials__link {
+  color: #fff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.socials--light .socials__link:hover {
+  color: #ffde00;
+}
+
 .infobar {
   padding: 1.5rem 0;
   background-color: #f6f6f6;
@@ -927,5 +941,331 @@ h6 {
   background-color: transparent;
   border-color: #fff;
   color: #fff;
+}
+
+.testimonials__header {
+  margin-bottom: 5rem;
+}
+
+.testimonials__subtitle {
+  color: #1f262f;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  line-height: 1.8;
+}
+
+.testimonials__title {
+  color: #1f262f;
+  font-size: 3.6rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 767.98px) {
+  .testimonials__title {
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+    line-height: 1.4;
+  }
+}
+
+.testimonials__card {
+  padding: 5rem;
+  background-color: #f6f6f6;
+}
+
+@media (max-width: 767.98px) {
+  .testimonials__card {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .testimonials__card {
+    padding: 1.5rem;
+  }
+}
+
+.testimonials__card-text {
+  margin-bottom: 6rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+@media (max-width: 575.98px) {
+  .testimonials__card-text {
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+  }
+}
+
+.testimonials__card-text::before {
+  content: "\"";
+}
+
+.testimonials__card-text::after {
+  content: "\"";
+}
+
+.testimonials__card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 575.98px) {
+  .testimonials__card-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.testimonials__card-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 3rem;
+}
+
+@media (max-width: 575.98px) {
+  .testimonials__card-avatar {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.testimonials__card-name {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.testimonials__card-prof {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #52647c;
+}
+
+.swiper-pagination {
+  padding: 2rem 0;
+  position: static;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0px 6px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #316ccd;
+}
+
+.footer {
+  padding: 15rem 0;
+  background-color: #1f262f;
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    padding: 7rem 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer {
+    padding: 5rem 0;
+  }
+}
+
+.footer__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
+
+@media (max-width: 767.98px) {
+  .footer__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 3rem;
+}
+
+.footer__desc {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: gray;
+}
+
+.footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 767.98px) {
+  .footer__right {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer__right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer__section {
+  max-width: 40%;
+}
+
+@media (max-width: 575.98px) {
+  .footer__section {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.footer__section:not(:last-child) {
+  margin-right: 5rem;
+}
+
+@media (max-width: 575.98px) {
+  .footer__section:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__list-title {
+  margin-bottom: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  line-height: 1.8;
+}
+
+.footer__list-title::after {
+  display: block;
+  height: 2px;
+  width: 5rem;
+  margin-top: 1rem;
+  background-color: #ffde00;
+  content: "";
+}
+
+.footer__list-item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.footer__list-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.footer__list-link::before {
+  margin-top: 3px;
+  margin-right: 1.5rem;
+  color: #ffde00;
+}
+
+.footer__list-link:hover {
+  color: #ffde00;
+}
+
+.copyright {
+  padding: 3rem 0;
+  background-color: #151a20;
+}
+
+.copyright__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 575.98px) {
+  .copyright__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.copyright__text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: gray;
+}
+
+@media (max-width: 575.98px) {
+  .copyright__text {
+    margin-bottom: 2rem;
+  }
+}
+
+.copyright__link {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.copyright__link:hover {
+  color: #ffde00;
 }
 /*# sourceMappingURL=style.css.map */

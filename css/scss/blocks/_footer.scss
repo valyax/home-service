@@ -1,0 +1,118 @@
+.footer {
+    padding: 15rem 0;
+
+    background-color: $color-dark;
+
+    @include breakpoint($reverse-bp) {
+        padding: 7rem 0;
+    }
+
+    @include breakpoint($mobile-bp) {
+        padding: 5rem 0;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5rem;
+
+        @include breakpoint($reverse-bp) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 3rem;
+    }
+
+    &__desc {
+        font-size  : 1.4rem;
+        line-height: 1.6;
+        font-weight: 400;
+        color      : darken($color-light, 50%);
+    }
+
+    &__right {
+        display: flex;
+        justify-content: flex-end;
+
+        @include breakpoint($reverse-bp) {
+            justify-content: flex-start;
+        }
+
+        @include breakpoint($mobile-bp) {
+            flex-direction: column;
+        }
+    }
+
+    &__section {
+        max-width: 40%;
+
+        @include breakpoint($mobile-bp) {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &:not(:last-child) {
+            margin-right: 5rem;
+
+            @include breakpoint($mobile-bp) {
+                margin-right: 0;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+
+    &__list {
+        list-style: none;
+
+        &-title {
+            margin-bottom: 3rem;
+
+            color         : $color-light;
+            text-transform: uppercase;
+            font-size     : 1.2rem;
+            font-weight   : 500;
+            letter-spacing: 3px;
+            line-height   : 1.8;
+
+            &::after {
+                display: block;
+                height: 2px;
+                width: 5rem;
+                margin-top: 1rem;
+
+                background-color: $color-accent;
+                content: "";
+            }
+        }
+
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &-link {
+            display: flex;
+
+            text-decoration: none;
+            color: $color-light;
+            font-size: 1.4rem;
+            line-height: 1.6;
+
+            transition: color 0.3s;
+
+            &::before {
+                margin-top: 3px;    
+                margin-right: 1.5rem;
+
+                color: $color-accent;
+            }
+
+            &:hover {
+                color: $color-accent;
+            }
+        }
+    }
+}

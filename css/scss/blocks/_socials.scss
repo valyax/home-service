@@ -16,4 +16,20 @@
         text-decoration: none;
         font-size: 1.4rem;
     }
+
+    &--light .socials__item {
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &--light .socials__link {
+        color: $color-light;
+
+        transition: color 0.3s;
+
+        &:hover {
+            color: $color-accent;
+        }
+    }
 }

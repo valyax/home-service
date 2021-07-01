@@ -1,0 +1,17 @@
+.swiper {
+    &-pagination {
+        padding: 2rem 0;
+
+        position: static;
+    }
+
+    &-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        margin: 0px 6px!important;
+
+        &-active {
+            background-color: $color-primary;
+        }
+    }
+}

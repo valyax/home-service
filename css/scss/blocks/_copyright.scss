@@ -1,0 +1,42 @@
+.copyright {
+    padding: 3rem 0;
+
+    background-color: darken($color-dark, 5%);
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        @include breakpoint($mobile-bp) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__text {
+        font-size  : 1.2rem;
+        line-height: 1.6;
+        font-weight: 400;
+        color      : darken($color-light, 50%);
+
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__link {
+        color: $color-light;
+        font-size  : 1.2rem;
+        line-height: 1.6;
+        font-weight: 400;
+        text-decoration: none;
+
+        transition: color 0.3s;
+
+        &:hover {
+            color: $color-accent;
+        }
+    }
+}
