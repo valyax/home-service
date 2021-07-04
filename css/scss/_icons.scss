@@ -34,36 +34,41 @@
 
     &-facebook::before {
         font-family: icomoon;
-        content    : '\e905 ';
+        content    : '\e905';
     }
 
     &-google::before {
         font-family: icomoon;
-        content    : '\e906 ';
+        content    : '\e906';
     }
 
     &-insta::before {
         font-family: icomoon;
-        content    : '\e907 ';
+        content    : '\e907';
     }
 
     &-map::before {
         font-family: icomoon;
-        content    : '\e908 ';
+        content    : '\e908';
     }
 
     &-phone::before {
         font-family: icomoon;
-        content    : '\e909 ';
+        content    : '\e909';
     }
 
     &-pinterest::before {
         font-family: icomoon;
-        content    : '\e90a ';
+        content    : '\e90a';
     }
 
     &-twitter::before {
         font-family: icomoon;
-        content    : '\e90b ';
+        content    : '\e90b';
+    }
+
+    &-close::before {
+        font-family: icomoon;
+        content    : '\e90c';
     }
 }
