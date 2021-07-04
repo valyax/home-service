@@ -35,7 +35,7 @@ modal.querySelector('.modal__close').addEventListener('click', () => {
 });
 
 modal.addEventListener('click', e => {
-    if (e.target.classList.contains('modal')) {
+    if (e.target.classList.contains('modal') || e.target.classList.contains('modal__container')) {
         modal.classList.remove('modal--active');
     }
 });
